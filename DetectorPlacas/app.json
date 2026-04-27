@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "DetectorPlacas",
+    "slug": "detector-placas",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Permite acceder a la cámara para detectar placas.",
+        "NSMicrophoneUsageDescription": "Permite usar el micrófono."
+      }
+    },
+    "android": {
+      "permissions": ["CAMERA", "INTERNET"],
+      "package": "com.unab.detectorplacas"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Permite acceder a tu cámara."
+        }
+      ]
+    ]
+  }
+}
